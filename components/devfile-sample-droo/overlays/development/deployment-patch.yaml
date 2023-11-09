@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-droo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0041-tenant/cin4s-839-0041-app/devfile-sample-droo@sha256:e8aeacb00ea66ec4cea2cbcdd774ac98a6158fdb5df5e42b414c5662b0b5da45
+        name: my-nodejs
+        resources: {}
+status: {}
